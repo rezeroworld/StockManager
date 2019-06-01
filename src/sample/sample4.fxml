@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="330.0" prefWidth="865.0" stylesheets="@jmetro8/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Sample4">
+   <children>
+      <TableView fx:id="table" editable="true" layoutX="130.0" layoutY="26.0" prefHeight="285.0">
+        <columns>
+          <TableColumn fx:id="numfour" prefWidth="150.0" text="№ Fournisseur" />
+          <TableColumn fx:id="nomfour" onEditCommit="#editer_nom" prefWidth="150.0" text="Nom" />
+            <TableColumn fx:id="adresse" onEditCommit="#editer_adr" prefWidth="110.0" text="Adresse" />
+            <TableColumn fx:id="tel" onEditCommit="#editer_tel" prefWidth="150.0" text="Telephone" />
+            <TableColumn fx:id="fax" onEditCommit="#editer_fax" prefWidth="150.0" text="Fax" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="5.0" layoutY="116.0" onAction="#ajouter_four" prefHeight="45.0" prefWidth="120.0" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="166.0" onAction="#editer_four" prefHeight="45.0" prefWidth="120.0" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="216.0" onAction="#supprimer_four" prefHeight="45.0" prefWidth="120.0" text="Supprimer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="266.0" onAction="#retourner" prefHeight="45.0" prefWidth="120.0" text="Retour">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

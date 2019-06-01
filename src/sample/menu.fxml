@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="276.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menuController">
+   <children>
+      <JFXButton layoutX="7.0" layoutY="14.0" onAction="#ajouter_article" prefHeight="39.0" prefWidth="263.0" text="Gerer les Articles">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="59.0" onAction="#modifier_fournisseur" prefHeight="39.0" prefWidth="263.0" text="Gerer les Fournisseurs">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="105.0" onAction="#afficher_clients" prefHeight="39.0" prefWidth="263.0" text="Gerer les Clients">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="149.0" onAction="#afficher_articles" prefHeight="39.0" prefWidth="263.0" text="Gerer les Approvisionnements">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="193.0" onAction="#afficher_livraisons" prefHeight="39.0" prefWidth="263.0" text="Gerer les Livraisons">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="238.0" onAction="#afficher_stocks" prefHeight="39.0" prefWidth="263.0" text="Gerer les Stocks">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="93.0" layoutY="301.0" onAction="#retourner" prefHeight="58.0" prefWidth="95.0" text="Quitter">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
