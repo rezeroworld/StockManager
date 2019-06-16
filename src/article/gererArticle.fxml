@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="355.0" prefWidth="950.0" stylesheets="@../css/jmetro8/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="article.GererArticle">
+   <children>
+      <TableView fx:id="table" layoutX="130.0" layoutY="20.0" prefHeight="320.0">
+        <columns>
+          <TableColumn fx:id="num" editable="false" prefWidth="116.0" resizable="false" text="№ Article" />
+          <TableColumn fx:id="lib" minWidth="0.0" prefWidth="120.0" text="Libelle" />
+            <TableColumn fx:id="prix" editable="false" minWidth="0.0" prefWidth="119.0" resizable="false" text="Prix Unit." />
+            <TableColumn fx:id="stockmin" editable="false" minWidth="0.0" prefWidth="130.0" resizable="false" text="Stock min" />
+            <TableColumn fx:id="stock" editable="false" minWidth="0.0" prefWidth="98.0" resizable="false" text="Stock" />
+            <TableColumn fx:id="etat" editable="false" minWidth="0.0" prefWidth="220.0" resizable="false" text="Etat" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="5.0" layoutY="145.0" onAction="#ajouter_article" prefHeight="45.0" prefWidth="120.0" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="195.0" onAction="#editer_article" prefHeight="45.0" prefWidth="120.0" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="245.0" onAction="#supprimer_article" prefHeight="45.0" prefWidth="120.0" text="Supprimer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="295.0" onAction="#retourner" prefHeight="45.0" prefWidth="120.0" text="Retour">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

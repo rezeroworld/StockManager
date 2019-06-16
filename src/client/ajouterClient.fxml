@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="275.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.AjouterClient">
+   <children>
+      <Label layoutX="15.0" layoutY="15.0" text="№ Client:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="60.0" text="Nom Client:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="105.0" text="Adresse:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="150.0" text="Telephone:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="195.0" text="Fax:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="216.0" layoutY="236.0" onAction="#ajouter" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="num" layoutX="350.0" layoutY="15.0" prefWidth="50.0" />
+      <JFXTextField fx:id="nom" layoutX="350.0" layoutY="60.0" />
+      <JFXTextField fx:id="adr" layoutX="350.0" layoutY="105.0" />
+      <JFXTextField fx:id="tel" layoutX="350.0" layoutY="150.0" />
+      <JFXTextField fx:id="fax" layoutX="350.0" layoutY="195.0" />
+   </children>
+</AnchorPane>

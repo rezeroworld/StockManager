@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="260.0" prefWidth="535.0" stylesheets="@../css/jmetro8/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraison.GererBonLiv">
+   <children>
+      <TableView fx:id="table" layoutX="130.0" layoutY="60.0" prefHeight="196.0">
+         <columns>
+            <TableColumn fx:id="n_bon" prefWidth="102.0" text="№ Bon" />
+            <TableColumn fx:id="date" prefWidth="150.0" text="Date" />
+            <TableColumn fx:id="numFC" prefWidth="150.0" text="№ Client" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="5.0" layoutY="60.0" onAction="#ajouter_Bon" prefHeight="45.0" prefWidth="120.0" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="110.0" onAction="#modifier_Bon" prefHeight="45.0" prefWidth="120.0" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="160.0" onAction="#supprimer_Bon" prefHeight="45.0" prefWidth="120.0" text="Supprimer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="210.0" onAction="#retourner" prefHeight="45.0" prefWidth="120.0" text="Retour">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

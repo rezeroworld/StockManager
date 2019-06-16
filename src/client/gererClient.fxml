@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="370.0" prefWidth="865.0" stylesheets="@../css/jmetro8/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.GererClient">
+   <children>
+      <TableView fx:id="table" layoutX="131.0" layoutY="67.0" prefHeight="285.0">
+        <columns>
+          <TableColumn fx:id="numcli" prefWidth="150.0" text="№ Client" />
+          <TableColumn fx:id="nomcli" minWidth="0.0" prefWidth="150.0" text="Nom" />
+            <TableColumn fx:id="adresse" minWidth="0.0" prefWidth="110.0" text="Adresse" />
+            <TableColumn fx:id="tel" minWidth="0.0" prefWidth="150.0" text="Telephone" />
+            <TableColumn fx:id="fax" minWidth="0.0" prefWidth="150.0" text="Fax" />
+        </columns>
+      </TableView>
+      <Label layoutX="131.0" layoutY="24.0" text="Selectionner une ville:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <JFXButton layoutX="6.0" layoutY="155.0" onAction="#ajouter_client" prefHeight="45.0" prefWidth="120.0" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="6.0" layoutY="205.0" onAction="#editer_client" prefHeight="45.0" prefWidth="120.0" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="6.0" layoutY="255.0" onAction="#supprimer_client" prefHeight="45.0" prefWidth="120.0" text="Supprimer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="6.0" layoutY="305.0" onAction="#retourner" prefHeight="45.0" prefWidth="120.0" text="Retour">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="villes" layoutX="295.0" layoutY="20.0" onAction="#remplir_list" />
+   </children>
+</AnchorPane>

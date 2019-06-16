@@ -8,7 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mysql-connector-java-8.0" level="project" />
-    <orderEntry type="library" name="org.jfxtras:jmetro:5.3" level="project" />
     <orderEntry type="library" name="jfoenix-8.0.8" level="project" />
   </component>
 </module>
